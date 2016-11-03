@@ -1,0 +1,17 @@
+
+var argv = require('yargs').argv;
+var command = argv._[0];
+
+console.log(argv);
+if (command === 'hello' && typeof argv.fnname!== 'Undefined' && typeof argv.lsname!== 'Undefined') {
+	console.log('hello first name ' + argv.fnname + '  last name ' + argv.lsname);
+
+} else if (command === 'hello' && typeof argv.fnname!== 'Undefined') {
+	console.log('hello first name ' + argv.name);
+
+}
+else if(command === 'hello'){
+
+console.log('Hello world!');
+
+}
